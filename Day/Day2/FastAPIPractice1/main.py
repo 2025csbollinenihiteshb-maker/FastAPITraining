@@ -9,3 +9,7 @@ def about():
 @app.get("/health")
 def health():
     return {"Status":"ok"}
+#post request
+@app.post("/create")
+def create_something():
+    return {"message":"Created"}
