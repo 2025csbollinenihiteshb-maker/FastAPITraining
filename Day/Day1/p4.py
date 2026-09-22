@@ -1,3 +1,4 @@
+#conept : class%instance
 class Dog:
     def bork(self):
         print("woof!")
