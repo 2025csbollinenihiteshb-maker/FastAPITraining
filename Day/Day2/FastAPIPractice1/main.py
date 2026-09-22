@@ -17,3 +17,8 @@ def create_something():
 @app.get("/student/{usn}")
 def get_result(usn):
     return {"Result":"Distinction","usn":usn}
+
+#path parameters with type hint
+@app.get("/candidate/{roll}")
+def get_result(roll: str):
+    return {"Result":"Distinction","roll":roll,"type": str(type(roll))}
